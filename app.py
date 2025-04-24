@@ -1,8 +1,9 @@
 from flask import Flask, jsonify
 import random
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 
 quotes = [
     "The only limit to our realization of tomorrow is our doubts of today.",
